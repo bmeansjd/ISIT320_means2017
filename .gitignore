@@ -1,0 +1,7 @@
+# IDE Files
+.idea
+.c9
+
+# Package files
+node_modules
+bower_components
