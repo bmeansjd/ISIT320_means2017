@@ -5,7 +5,7 @@
     "scripts": {
     "test": "karma start",
         "start": "nodemon ./bin/www"
-        "proxy": "https//:localhost:30026"
+        "proxy": "https://localhost:30026"
     },
     "dependencies": {
         "body-parser": "~1.18.2",

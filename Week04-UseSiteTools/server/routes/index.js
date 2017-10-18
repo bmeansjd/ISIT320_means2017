@@ -11,4 +11,5 @@ router.get('/foo', function(req, res, next) { 'use strict';
     console.log(foo);
     res.send({config: foo.getElvenImages()});
 });
+
 module.exports = router;
