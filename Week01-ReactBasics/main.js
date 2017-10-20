@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ReactBasics from './ReactBasicsStatelessFunctional.js';
-
+import ReactBasics from './ReactBasics';
+const root = document.getElementById('root');
 ReactDOM.render(
-    <ReactBasics/>,
-    document.getElementById('root')
+    <ReactBasics/>, root
 );
