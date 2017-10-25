@@ -28,21 +28,21 @@ app.use('/users', users);
 app.use('/api', api);               // on line 28
 // catch 404 and forward to error handler
 app.use(function(req, res, next) { 'use strict';
-    var err = new Error('Not Found');
-    err.status = 404;
-    next(err);
+  var err = new Error('Not Found');
+  err.status = 404;
+  next(err);
 });
 
 // error handler
 app.use(function(err, req, res, next) { 'use strict';
-    // set locals, only providing error in development
-    res.locals.message = err.message;
-    res.locals.error = req.app.get('env') === 'development' ? err : {};
+  // set locals, only providing error in development
+  res.locals.message = err.message;
+  res.locals.error = req.app.get('env') === 'development' ? err : {};
 
-    // render the error page
-    res.status(err.status || 500);
-    console.log(err);
-    res.render('error');
+  // render the error page
+  res.status(err.status || 500);
+		console.log(err);
+  res.render('error');
 });
 
 module.exports = app;

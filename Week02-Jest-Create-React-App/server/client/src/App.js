@@ -45,3 +45,34 @@ class App extends Component {
 }
 
 export default App;
+
+/*
+
+constructor() {
+    super();
+    this.state = {
+        file: 'unknown',
+        foo: 'waiting'
+    };
+}
+
+// CODE OMITTED HERE....
+
+render() {
+    return (
+        <div className="App">
+            <div className="App-header">
+                <img src={logo} className="App-logo" alt="logo"/>
+                <h2>Welcome to React</h2>
+            </div>
+
+            <p className="App-intro">
+                state: {this.state.foo}
+            </p>
+            <p className="App-intro">
+                file: {this.state.file}
+            </p>
+            <button onClick={this.bar}>Bar</button>
+        </div>
+    );
+}*/
