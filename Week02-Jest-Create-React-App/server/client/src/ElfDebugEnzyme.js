@@ -18,7 +18,7 @@
      * requesting to see the output.
      */
 import ElfDebugEnzyme from './ElfDebugEnzyme';
-const ElfDebugEnzyme = new ElfDebugEnzyme(true, 'App.test.js');
+const elfDebugEnzyme = new ElfDebugEnzyme(true, 'App.test.js');
 ElfDebugEnzyme.getIndex(wrapper, 'div#addressShow', 3, false);
 
 
