@@ -1,0 +1,1 @@
+output: {path: __dirname, filename: './public/javascripts/bundle.js'},

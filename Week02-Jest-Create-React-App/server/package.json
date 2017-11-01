@@ -4,8 +4,7 @@
     "private": true,
     "scripts": {
     "test": "karma start",
-        "start": "nodemon ./bin/www",
-        "proxy": "http://localhost:30026"
+        "start": "nodemon ./bin/www"
     },
     "dependencies": {
         "body-parser": "~1.18.2",
