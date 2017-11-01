@@ -1,1 +1,1 @@
-output: {path: __dirname, filename: './public/javascripts/bundle.js'},
+output: {path: __dirname, filename: './public/javascripts/bundle.js'};
