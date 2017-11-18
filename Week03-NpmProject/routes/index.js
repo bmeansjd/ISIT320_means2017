@@ -13,9 +13,6 @@ var message = {'cat-names': 'luda', 'fluffyella': 'iris', 'bryson':
         console.log('package-info called:\n' + JSON.stringify(message, null, 5))
         response.send(message)});
 
-
-
-
 router.get('/', function(req, res, next) { 'use strict';
   res.render('index', { title: 'Week03-NpmProject' });
 });

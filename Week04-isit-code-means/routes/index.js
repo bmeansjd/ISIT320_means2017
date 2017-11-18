@@ -1,8 +1,7 @@
 var express = require('express');
 var router = express.Router();
-const isitCode = require('isit-code-means');
-const elfUtils = require('isit-code-means').elfUtils;
-
+const isitCode = require('../Week04-isit-code-means');
+const elfUtils = require('../Week04-isit-code-means').elfUtils;
 
 
 
