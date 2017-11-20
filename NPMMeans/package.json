@@ -1,0 +1,19 @@
+{
+  "name": "isit320_means2017",
+  "version": "1.3.0",
+  "description": "Npm Package Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bmeansjd/ISIT320_means2017.git"
+  },
+  "author": "Brenda Means",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bmeansjd/ISIT320_means2017/issues"
+  },
+  "homepage": "https://github.com/bmeansjd/ISIT320_means2017#readme"
+}
