@@ -1,21 +1,37 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
+constructor(props) {
+    super(props);
+    this.state = {
+        statement: 'No comment'
+    };
+    
+    this.props.store.subscribe(() => {
+        const storeState = this.props.store.getState();
+        this.setState((prevState) => {
+            return {statement: storeState.statement}
+        });
+    })
 }
 
-export default App;
+verifyStatement = () => {
+    this.props.store.dispatch({ type: 'VERIFY' });
+};
+
+// IMPLEMENT denyEverything AND noComment HERE.
+
+
+render() {
+    return (
+        <div className="App">
+            <h1>Political Science Props Redux in App</h1>
+            <p>This component uses redux.</p>
+            {this.state.statement}
+
+            <div className="Box">
+                <button onClick={this.verifyStatement}>Verify</button>
+                <button onClick={this.denyEverything}>Deny</button>
+                <button onClick={this.noComment}>No Comment</button>
+            </div>
+            <hr />
+        </div>
+    );
+}
