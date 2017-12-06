@@ -1,9 +1,15 @@
-constructor(props) {
+
+
+
+const storeState = this.props.store.getState();
+
+
+constructor(props){
     super(props);
     this.state = {
         statement: 'No comment'
+        
     };
-    
     this.props.store.subscribe(() => {
         const storeState = this.props.store.getState();
         this.setState((prevState) => {
@@ -19,7 +25,7 @@ verifyStatement = () => {
 // IMPLEMENT denyEverything AND noComment HERE.
 
 
-render() {
+render(); {
     return (
         <div className="App">
             <h1>Political Science Props Redux in App</h1>
